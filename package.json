@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/LeeWarnock/RESTfulAPIwNodeandMongoDB#readme",
   "dependencies": {
-    "body-parser": "^1.13.3",
-    "express": "^4.13.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
     "mongoose": "^4.1.2"
   }
 }
