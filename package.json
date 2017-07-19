@@ -1,0 +1,28 @@
+{
+  "name": "restfulapiwnodeandmongodb",
+  "version": "1.0.0",
+  "description": "Restful API built on Node and MongoDB\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "/GET localhost:3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeWarnock/RESTfulAPIwNodeandMongoDB.git"
+  },
+  "keywords": [
+    "node.js",
+    "APU",
+    "REST\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[3~\u001b[3~I\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+    "MongoDB"
+  ],
+  "author": "Lee Warnock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeWarnock/RESTfulAPIwNodeandMongoDB/issues"
+  },
+  "homepage": "https://github.com/LeeWarnock/RESTfulAPIwNodeandMongoDB#readme",
+  "dependencies": {
+    "mongoose": "^4.11.3"
+  }
+}
