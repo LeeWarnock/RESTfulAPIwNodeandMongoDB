@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({"extended" : false}));
 
 router.get("/",function(req,res){
-    res.json({"error" : false,"message" : "Hello World"});
+    res.json({"error" : false,"message" : "Hello World! Router has connected you to the server."});
 });
 
 app.use('/',router);
