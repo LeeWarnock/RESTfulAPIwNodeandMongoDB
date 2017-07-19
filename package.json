@@ -2,13 +2,13 @@
   "name": "restfulapiwnodeandmongodb",
   "version": "1.0.0",
   "description": "Restful API built on Node and MongoDB",
-  "main": "index.js",
+  "main": "Server.js",
   "scripts": {
-    "test": "/GET localhost:3000"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeeWarnock/RESTfulAPIwNodeandMongoDB.git"
+    "url": "https://github.com/LeeWarnock/RESTfulAPIwNodeandMongoDB"
   },
   "keywords": [
     "node.js",
@@ -26,6 +26,6 @@
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
-    "mongoose": "^4.11.3"
+    "mongoose": "^4.1.2"
   }
 }
