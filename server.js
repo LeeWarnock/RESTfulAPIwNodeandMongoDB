@@ -1,7 +1,7 @@
 var express     =   require("express");
 var app         =   express();
 var bodyParser  =   require("body-parser");
-var mongoOp     =   require("./model/mongo")
+var mongoOp     =   require("./model/mongo");
 var router      =   express.Router();
 
 app.use(bodyParser.json());
@@ -17,26 +17,13 @@ router.get("/",function(req,res){
 
 router.route("/users")
     .get(function(req,res){
-        ------------------------------------------------------
-    })
-    .post(function(req,res){
-        var db = new mongoOp();
         var response = {};
-        // fetch email and password from REST request.
-        // Add strict validation when you use this in Production.
-        db.userEmail = req.body.email;
-        // Hash the password using SHA1 algorithm.
-        db.userPassword =  require('crypto')
-                          .createHash('sha1')
-                          .update(req.body.password)
-                          .digest('base64');
-        db.save(function(err){
-        // save() will run insert() command of MongoDB.
-        // it will add new data in collection.
+        mongoOp.find({},function(err,data){
+        // Mongo command to fetch all data from collection.
             if(err) {
-                response = {"error" : true,"message" : "Error adding data"};
+                response = {"error" : true,"message" : "Error fetching data"};
             } else {
-                response = {"error" : false,"message" : "Data added"};
+                response = {"error" : false,"message" : data};
             }
             res.json(response);
         });
